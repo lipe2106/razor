@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - moment1.1</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/moment1.1.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div>
+            <img src="~/menu.png" alt="menu icon" id="hamburger" />
+        </div>
+        <a asp-area="" asp-page="/Index" class="logo">Razor</a>
+        <span class="date">Dagens datum är: </span>
+    </header>
+    <main role="main">
+        <aside id="menu">
+            <nav>
+                <ul>
+                    <li>
+                        <a asp-area="" asp-page="/Index">Start</a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-page="/Razor">Razor</a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-page="/About">Om sidan</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="container">
+            @RenderBody()
+        </div>
+    </main>
+
+    <footer>
+        <p>Av Lina Petersson - Kontakta mig via e-post: lipe2106@student.miun.se</p>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
