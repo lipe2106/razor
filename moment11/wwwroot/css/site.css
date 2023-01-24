@@ -55,13 +55,13 @@ aside {
     height: 100vh;
 }
 
-ul {
+aside ul {
     list-style: none;
     width: 100%;
     padding-left: 0%;
 }
 
-li {
+aside li {
     color: black;
     border: 0.5px solid black;
     padding: 1.8%;
@@ -69,11 +69,12 @@ li {
     text-align: center;
 }
 
-    li:hover {
+   aside li:hover {
         background-color: lightgray;
-    }
+   }
 
 a {
+    display: block;
     text-decoration: none;
 }
 
@@ -83,6 +84,10 @@ main .container {
     padding: 3% 5%;
     height: 100vh;
     width: 97%;
+}
+
+h2 {
+    font-size: 1.2em;
 }
 
 footer {

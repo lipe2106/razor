@@ -1,10 +1,15 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Startsida";
+
+    // Date in header
+    var date = DateTime.Now;
+    ViewData["date"] = date.ToString("yyyy/MM/dd");
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div>
+    <h1 class="display-4">Välkommen</h1>
+    <p>Denna webbplats är skapad med hjälp av ASP.NET Core och Razor.</p>
+    <p>På undersidan för <i>Razor</i> kan du se innehåll skapat med Razor kod och på undersidan <i>Om</i> kan du läsa mer om mig. Mycket nöje!</p>
 </div>

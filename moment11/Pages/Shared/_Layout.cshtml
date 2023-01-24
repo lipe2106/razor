@@ -14,10 +14,10 @@
             <img src="~/menu.png" alt="menu icon" id="hamburger" />
         </div>
         <a asp-area="" asp-page="/Index" class="logo">Razor</a>
-        <span class="date">Dagens datum är: </span>
+        <span class="date">Dagens datum är: @ViewData["date"]</span>
     </header>
     <main role="main">
-        <aside id="menu">
+        <aside id="menu" style="display: block;">
             <nav>
                 <ul>
                     <li>
@@ -27,7 +27,7 @@
                         <a asp-area="" asp-page="/Razor">Razor</a>
                     </li>
                     <li>
-                        <a asp-area="" asp-page="/About">Om sidan</a>
+                        <a asp-area="" asp-page="/About">Om</a>
                     </li>
                 </ul>
             </nav>
