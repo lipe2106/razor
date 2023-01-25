@@ -1,17 +1,20 @@
 ﻿"use strict"
 
 //Get element from HTML
-let hamburger = document.getElementById("hamburger");
-let menu = document.getElementById("menu");
+let likeBtn = document.getElementById("likeBtn");
+let likes = document.getElementById("likes");
 
 //Add eventlistener
-hamburger.addEventListener("click", showMenu);
+likeBtn.addEventListener("click", likePage);
 
-//Function to show menu
-function showMenu() {
-    if (menu.style.display == "none") {
-        menu.style.display = "block";
-    } else {
-        menu.style.display = "none";
-    }
+// Declare variable
+let NoOflikes = 0;
+
+//Function to like page
+function likePage() {
+
+    NoOflikes++;
+
+    // Print to HTML
+    likes.innerHTML = "Sidan har fått " + NoOflikes + " likes. Tack så mycket!";
 }

@@ -24,12 +24,12 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: 10% 70% 20%;
+    grid-template-columns: 70% 30%;
     padding: 1% 3% 3% 3%;
     align-items: start;
     border-bottom: 0.5px solid black;
     background-color: white;
-    box-shadow: 5px 3px 10px dimgray; /*Creating a shadow below the menu*/
+    box-shadow: 1px 1px 3px dimgray;
 }
 
 .logo {
@@ -37,17 +37,11 @@ header {
     text-decoration: none;
     padding-top: 5%;
     color: black;
-    text-shadow: 0 0 10px cadetblue;
+    text-shadow: 2px 2px 3px cadetblue;
 }
 
 .date {
     text-align: right;
-}
-
-#hamburger {
-    height: 30px;
-    width: 30px;
-    display: none;
 }
 
 main {
@@ -63,7 +57,7 @@ aside {
     padding: 5%;
     height: 100vh;
     background-color: white;
-    box-shadow: 0 0 10px dimgray;
+    box-shadow: 0px 0px 3px dimgray;
 }
 
 aside ul {
@@ -79,7 +73,7 @@ aside ul {
         margin: 10% 2%;
         text-align: center;
         background-color: cadetblue;
-        box-shadow: 0 0 10px gray;
+        box-shadow: 1px 1px 3px dimgray;
     }
 
    aside li:hover {
@@ -104,7 +98,7 @@ main .container {
     height: 100vh;
     width: 97%;
     background-color: white;
-    box-shadow: 0 0 10px dimgray;
+    box-shadow: 0px 0px 3px dimgray;
 }
 
 h1 {
@@ -124,6 +118,21 @@ h3 {
     margin: 4% 0% 2% 0%;
 }
 
+button {
+    margin: 1% 0% 2% 0%;
+    height: 30px;
+    background-color: cadetblue;
+    border: 0.5px solid black;
+    box-shadow: 1px 1px 3px dimgray;
+    padding: 0% 2%;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: lightgray;
+        color: black;
+    }
+
 footer {
     text-align: center;
     border: 0.5px solid black;
@@ -138,15 +147,11 @@ footer {
 @media (max-width: 500px) {
 
     header {
-        grid-template-columns: 10% 60% 30%;
+        grid-template-columns: 70% 30%;
     }
 
     .logo {
         font-size: 2.5em;
-    }
-
-    #hamburger {
-        display: block;
     }
 
     main {
@@ -154,9 +159,12 @@ footer {
     }
 
     aside {
-        display: none;
         padding: 0%;
         height: 100%;
+    }
+
+    aside li {
+        margin: 2%;
     }
 
     main .container {
